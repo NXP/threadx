@@ -61,6 +61,10 @@
 /*  09-30-2020      Scott Larson            Initial Version 6.1           */
 /*                                                                        */
 /**************************************************************************/
+#ifndef TX_SINGLE_MODE_SECURE
+#define TX_SINGLE_MODE_SECURE
+#endif
+
 // VOID   _tx_thread_stack_build(TX_THREAD *thread_ptr, VOID (*function_ptr)(VOID))
 // {
     .section .text

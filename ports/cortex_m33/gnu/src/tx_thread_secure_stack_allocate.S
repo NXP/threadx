@@ -60,6 +60,9 @@
 /*  09-30-2020      Scott Larson            Initial Version 6.1           */
 /*                                                                        */
 /**************************************************************************/
+#ifndef TX_SINGLE_MODE_SECURE
+#define TX_SINGLE_MODE_SECURE
+#endif
 // UINT   _tx_thread_secure_stack_allocate(TX_THREAD *thread_ptr, ULONG stack_size)
 // {
     .section .text
