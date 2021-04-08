@@ -314,16 +314,14 @@ void   _tx_misra_vfp_touch(void);
 
 #ifdef TX_SOURCE_CODE
 
-static unsigned int _get_control(void);
-static unsigned int _get_control(void)
+static inline unsigned int _get_control(void)
 {
     unsigned int _control;
     __asm("MRS %[result], control" : [result] "=r" (_control) : );
     return _control;
 }
 
-static void _set_control(unsigned int _control);
-static void _set_control(unsigned int _control)
+static inline void _set_control(unsigned int _control)
 {
     __asm("MSR control, %[input]" : : [input] "r" (_control));
 }
