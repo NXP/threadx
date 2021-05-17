@@ -96,6 +96,8 @@
         PUBLIC _tx_misra_void_to_uchar_pointer_convert
         PUBLIC _tx_misra_void_to_ulong_pointer_convert
         PUBLIC _tx_misra_ipsr_get
+
+#ifdef TX_MISRA_ENABLE
         PUBLIC _tx_version_id
 
 
@@ -114,6 +116,8 @@ _tx_version_id:
         DC8 20H, 43H, 6FH, 6DH, 70H, 6CH, 69H, 61H
         DC8 6EH, 74H, 20H, 2AH, 0
         DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+#endif  /* TX_MISRA_ENABLE */
 
 /**************************************************************************/
 /**************************************************************************/
