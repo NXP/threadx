@@ -107,11 +107,6 @@
 #endif /* TX_ENABLE_IAR_LIBRARY_SUPPORT */
 #endif /* __ICCARM__ */
 
-#ifdef __ARMCOMPILER_VERSION
-#include <arm_compat.h>
-#endif
-
-
 /* Define ThreadX basic types for this port.  */
 
 #define VOID                                    void
